@@ -9,7 +9,7 @@ const tablas = async(numero,hasta,listar)=>{
     if (listar) {
         console.log(salida)
     }
-    fs.writeFileSync(`./salida/tabla-${numero}.txt`,salida);
+    fs.writeFileSync(`./tablas/tabla-${numero}.txt`,salida);
     return `tabla del ${numero} creada`;  
     } catch (error) {
         throw error;
